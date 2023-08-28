@@ -328,15 +328,77 @@ body {
     overflow: hidden;
     color: #e3e3e3;
     font-weight: 100;
-    background: linear-gradient(#181818 0%, rgba(100, 0, 0, 1)  100%);
+    background: linear-gradient(#181818 0%, rgba(100, 0, 0, 1) 100%);
     width: 100%;
     height: 100%;
     border-bottom: 2px solid rgba(233, 0, 0, 0.5);
 }
-.outlastwb header{
-    height: 60px;
+
+.outlastwb header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
 }
+
+.outlastwb header h1 {
+    font-size: 3em;
+    font-family: 'Borna', sans-serif;
+}
+
+.outlastwbcontent {
+    position: absolute;
+    top: 0;
+    padding: 0 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.outlastwbcontent a img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.outlastwbcontent iframe {
+    width: 50%;
+    height: 60%;
+}
+
+.outlastwb footer {
+    position: absolute;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1000;
+    background: linear-gradient(rgba(233, 0, 0, 0.7), rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0.3) 95%, rgba(233, 0, 0, 0.7) 100%);
+    padding: 0 3rem;
+}
+
+.outlastwb footer a {
+    font-size: 1.2em;
+    margin-top: 2rem;
+    color: #e3e3e3;
+    font-family: 'Borna', sans-serif;
+    z-index: 999;
+}
+
+#trager {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 300px;
+    height: auto;
+}
+
 .outlast2 {
     position: absolute;
     top: 315%;
@@ -349,6 +411,15 @@ body {
     border-bottom: 2px solid rgba(233, 0, 0, 0.5);
 }
 
+#bgoutlast2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+
+
 .outlasttrials {
     position: absolute;
     top: 415%;
@@ -359,6 +430,13 @@ body {
     width: 100%;
     height: 100%;
     border-bottom: 2px solid rgba(233, 0, 0, 0.5);
+}
+
+#bgoutlasttrials {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
 }
 
 .footer {
